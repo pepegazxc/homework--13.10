@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите скорость в км/ч:  ");
+        int kmPerHour = sc.nextInt();
+        System.out.println("Введите скорость в м/c:   ");
+        int metrPerSecond = sc.nextInt();
+
+        if (kmPerHour > metrPerSecond * 3.6) {
+            System.out.println("Скорость в км/час больше чем скорость в м/c");
+        } else {
+            System.out.println("Скорость в м/c больше чем скорость в км/час");
+        }
+    }
+}
