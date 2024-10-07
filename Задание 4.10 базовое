@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите R круга:  ");
+        int r = sc.nextInt();
+        System.out.print("Введите сторону а квадрата:   ");
+        int a = sc.nextInt();
+
+        double P = 3.14;
+
+        double Scircle = P * r * r;
+        System.out.println("Площадь круга равна:  "+ Scircle);
+        int Ssquare = a * a;
+        System.out.println("Площадь квадрата равноа:   "+ Ssquare);
+
+        if (Scircle > Ssquare) {
+            System.out.println("Площадь круга больше");
+        }else if (Ssquare > Scircle) {
+            System.out.println("площадь квадатра больше");
+        }else{
+            System.out.println("Площади равны");
+        }
+    }
+}
