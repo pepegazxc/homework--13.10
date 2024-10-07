@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите вещественное число а (при этом а не равно 0):  ");
+        double a = sc.nextDouble();
+        System.out.println("Введитье вещественное число б:   ");
+        double b = sc.nextDouble();
+        System.out.println("Введите вещественное число c:   ");
+        double c = sc.nextDouble();
+
+        double D = (b * b) - (4 * a * c);
+        if (D < 0) {
+            System.out.println("Корней нет");
+        } else if (D == 0) {
+            System.out.println("Есть один корень и он = 0");
+        }else{
+            double K = Math.sqrt(D);
+            double x1 = (-b + K) / (2 * a);
+            double x2 = (-b - K) / (2 * a);
+            System.out.println("Вещественные корни x1 и x2 =...");
+            System.out.println(x1+" "+ x2);
+        }
+    }
+}
