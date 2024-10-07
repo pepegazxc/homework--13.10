@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b number: ");
+        int b = sc.nextInt();
+        System.out.println("Enter c number: ");
+        int c = sc.nextInt();
+
+        if (a > b && a > c){
+            System.out.println("The number a is greater than the number");
+        } else if (b > a && b > c){
+            System.out.println("The number b is greater than the number");
+        }else if (c > a && c > b){
+            System.out.println("The number c is greater than the number");
+        }
+        if (a < b && a < c) {
+            System.out.println("The number a is less than the number");
+        }  else if (b < a && b < c) {
+            System.out.println("The number b is less than the number");
+        }   else if (c < a && c < b) {
+            System.out.println("The number c is less than the number");
+        }
+        if (a > b && a < c || a < b && a > c) {
+            System.out.println("The number a is middle than the number");
+        }  else if (b > a && b < c || b < a && b > c) {
+            System.out.println("The number b is middle than the number");
+        }   else if (c > a && c < b || c < a && c > b) {
+            System.out.println("The number c is middle than the number");
+        }
+
+
+    }
+}
