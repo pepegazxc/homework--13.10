@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System .out.print("Введите четырехзначное число:  ");
+        int number = sc.nextInt();
+        int a;
+        int b;
+        int c;
+        int d;
+
+        int sum;
+        int pro;
+
+        a = number % 10;
+        b = number % 100 / 10;
+        c = number % 1000 / 100;
+        d = number % 10000 / 1000;
+
+        sum = a + b + c + d;
+        pro = a * b * c * d;
+        
+        System.out.print("Сумма будет равна:   " +sum+"\n");
+        System.out.print("Произведение будет равно:  " +pro);
+    }
+}
