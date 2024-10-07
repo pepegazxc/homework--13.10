@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a side: ");
+        double a = sc.nextDouble();
+        System.out.println("Enter b side: ");
+        double b = sc.nextDouble();
+        System.out.println("Enter c side: ");
+        double  c = sc.nextDouble();
+
+        if (a + b >= c) {
+            if (b + c >= a)
+                if (a + c >= b)
+                    System.out.println("Треугольник существует.");
+        }
+        else {
+            System.out.println("Треуголник не существует");
+        }
+    }
+
+
+}
