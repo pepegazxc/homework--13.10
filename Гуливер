@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите коэффициент во сколько раз Гулливер больше лилипутов(2<=K):   ");
+        int k = sc.nextInt();
+        System.out.print("Введите M кол-во матрацев(M<=100):   ");
+        int m = sc.nextInt();
+
+        int a = k * k * m;
+        System.out.println(a);
+
+
+
+    }
+}
+
