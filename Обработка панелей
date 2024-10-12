@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Введите сколько необходимо обработать панелей(N<=100):   ");
+        int n = sc.nextInt();
+        System.out.print("Введите размер панели A на B метров (первый размер A(<=100) потом B(<=100)):   ");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int c = a * b;
+        int j = n * c;
+        int k = j * 2;
+
+        System.out.println("Необходимо сульфида:  "+k);
+
+
+    }
+}
+
